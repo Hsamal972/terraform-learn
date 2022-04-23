@@ -124,3 +124,6 @@ resource "aws_key_pair" "ssh_key" {
     public_key = file("C:\\Users\\doome\\.ssh\\id_rsa.pub")
 }
 
+output "public_ip" {
+    value = aws_instance.myapp-instance.public_ip
+}
